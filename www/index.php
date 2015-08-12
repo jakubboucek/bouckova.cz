@@ -84,9 +84,9 @@
   <div id="contact">
   <h1>MVDr. Iva Boučková</h1>
   <p class="sup"><strong>Veterinární lékařka</strong>, <br />
-  inspektorka v&nbsp;<a href="http://www.mevs.cz/">Městské veterinární správě v&nbsp;Praze</a> a
+  do roku 2013 inspektorka v&nbsp;<a href="http://www.mevs.cz/">Městské veterinární správě v&nbsp;Praze</a> a
   vášnivá chovatelka zvěře různorodého původu</p>
-  <p>Telefon: 776 57 32 39 <br />
+  <p>Telefon: <a href="tel:+420776573239">776 57 32 39</a><br />
   E-mail: <a href="mailto:iva&#64;bouckova.cz">iva&#64;bouckova.cz</a></p>
   </div>
  </div>  
