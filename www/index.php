@@ -75,7 +75,6 @@
 	})();
 
 </script>
-<script src="//s3-eu-west-1.amazonaws.com/fucking-eu-cookies/cz.js" async></script>
 	<link rel="shortcut icon" href="/favicon.ico" />
 </head>
 
