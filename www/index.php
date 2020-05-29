@@ -86,8 +86,7 @@
 	<p class="sup"><strong>Veterinární lékařka</strong>, <br />
 	do roku 2013 inspektorka v&nbsp;<a href="http://www.mevs.cz/">Městské veterinární správě v&nbsp;Praze</a> a
 	vášnivá chovatelka zvěře různorodého původu</p>
-	<p>Telefon: <a href="tel:+420776573239">776 57 32 39</a><br />
-	E-mail: <a href="mailto:iva&#64;bouckova.cz">iva&#64;bouckova.cz</a></p>
+	<p>E-mail: <a href="mailto:iva&#64;bouckova.cz">iva&#64;bouckova.cz</a></p>
 	</div>
  </div>
 </body>
