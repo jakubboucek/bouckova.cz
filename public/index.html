@@ -196,7 +196,7 @@
             }
         }
 
-        @media screen and (max-width: 430px){
+        @media screen and (max-width: 430px) {
             #namebox {
                 flex-direction: column;
             }
@@ -204,6 +204,74 @@
             #namebox #img-box {
                 margin-bottom: 1em;
             }
+        }
+
+        /**
+            ANIMATIONS
+         */
+        @keyframes dimBg {
+            from {
+                background-color: #fff;
+            }
+            to {
+                background-color: #000;
+            }
+        }
+
+        @keyframes showBorder {
+            from {
+                border-color: transparent;
+            }
+            to {
+                border-color: #000;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeUnzoom {
+            from {
+                opacity: 0;
+                transform: scale(2.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+
+        html, body {
+            background-color: #fff;
+            animation: dimBg 10s ease 15s forwards;
+        }
+
+        #border {
+            border-color: transparent;
+            animation: showBorder 4s ease 12s forwards;
+        }
+
+        #crossbox {
+            opacity: 0;
+            animation: fadein 5s ease 8s forwards;
+        }
+
+        #death-date {
+            opacity: 0;
+            animation: fadeUnzoom 2.5s ease 3s forwards;
+            animation-timing-function: ease-in;
+        }
+
+        #message, #linkpanel {
+            opacity: 0;
+            animation: fadein 5s ease 9s forwards;
         }
 
     </style>
@@ -246,9 +314,9 @@
 
             <p><strong>Syn Jakub</strong></p>
         </div>
-<!--        <div id="linkpanel">-->
-<!--            <a href="">Vzpomínky</a>-->
-<!--        </div>-->
+        <!--        <div id="linkpanel">-->
+        <!--            <a href="">Vzpomínky</a>-->
+        <!--        </div>-->
     </div>
 </div>
 </body>
