@@ -29,10 +29,19 @@
 
     <title>Rozloučení s maminkou</title>
     <style>
+        @media screen {
+            body, html {
+                background-color: black;
+                min-height: 100dvh;
+            }
+
+            #paper {
+                aspect-ratio: 1/1.414;
+            }
+        }
+
         body, html {
-            min-height: 100dvh;
             margin: 0;
-            background-color: black;
             padding: 0;
             display: flex;
             justify-content: center;
@@ -51,7 +60,6 @@
         #paper {
             background-color: white;
             width: 41em;
-            aspect-ratio: 1/1.414;
             padding: 1em;
         }
 
@@ -137,9 +145,16 @@
         }
 
         #linkpanel {
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
+        }
+
+        @media screen {
+
+            #linkpanel {
+                display: flex;
+            }
         }
 
         a {
@@ -238,69 +253,71 @@
         /**
             ANIMATIONS
          */
-        @keyframes dimBg {
-            from {
+        @media screen {
+            @keyframes dimBg {
+                from {
+                    background-color: #fff;
+                }
+                to {
+                    background-color: #000;
+                }
+            }
+
+            @keyframes showBorder {
+                from {
+                    border-color: transparent;
+                }
+                to {
+                    border-color: #000;
+                }
+            }
+
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fadeUnzoom {
+                from {
+                    opacity: 0;
+                    transform: scale(2.5);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+
+            html, body {
                 background-color: #fff;
+                animation: dimBg 10s ease 12s forwards;
             }
-            to {
-                background-color: #000;
-            }
-        }
 
-        @keyframes showBorder {
-            from {
+            #border {
                 border-color: transparent;
+                animation: showBorder 4s ease 10s forwards;
             }
-            to {
-                border-color: #000;
-            }
-        }
 
-        @keyframes fadein {
-            from {
+            #crossbox {
                 opacity: 0;
+                animation: fadein 5s ease 4s forwards;
             }
-            to {
-                opacity: 1;
-            }
-        }
 
-        @keyframes fadeUnzoom {
-            from {
+            #death-date {
                 opacity: 0;
-                transform: scale(2.5);
+                animation: fadeUnzoom 3.5s ease 1s forwards;
+                animation-timing-function: ease-in;
             }
-            to {
-                opacity: 1;
-                transform: scale(1);
+
+            #message, #linkpanel {
+                opacity: 0;
+                animation: fadein 5s ease 9s forwards;
             }
-        }
-
-
-        html, body {
-            background-color: #fff;
-            animation: dimBg 10s ease 12s forwards;
-        }
-
-        #border {
-            border-color: transparent;
-            animation: showBorder 4s ease 10s forwards;
-        }
-
-        #crossbox {
-            opacity: 0;
-            animation: fadein 5s ease 4s forwards;
-        }
-
-        #death-date {
-            opacity: 0;
-            animation: fadeUnzoom 3.5s ease 1s forwards;
-            animation-timing-function: ease-in;
-        }
-
-        #message, #linkpanel {
-            opacity: 0;
-            animation: fadein 5s ease 9s forwards;
         }
     </style>
     <script>
