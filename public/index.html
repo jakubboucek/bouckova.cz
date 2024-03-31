@@ -1,99 +1,354 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-    <meta http-equiv="Content-language" content="cs">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <meta name="google-site-verification" content="PuJ0VpFy4GhCGGBZRctXj6t-UdWm2jP2MR8W-HVA2L0">
-    <title>MVDr. Iva Boučková</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+
+    <meta name="title" content="Sbohem maminko…">
+    <meta name="description"
+          content="29. 3. 2024 nás navždy opustila paní Iva Boučková, výborná veterinární lékařka a maminka. Budeme s láskou vzpomínat ❤️">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bouckova.cz/">
+    <meta property="og:title" content="Sbohem maminko…">
+    <meta property="og:description"
+          content="29. 3. 2024 nás navždy opustila paní Iva Boučková, výborná veterinární lékařka a maminka. Budeme s láskou vzpomínat ❤️">
+    <meta property="og:image" content="/img/maminka-og.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.bouckova.cz/">
+    <meta property="twitter:title" content="Sbohem maminko…">
+    <meta property="twitter:description"
+          content="29. 3. 2024 nás navždy opustila paní Iva Boučková, výborná veterinární lékařka a maminka. Budeme s láskou vzpomínat ❤️">
+    <meta property="twitter:image" content="/img/maminka-og.jpg">
+
+    <title>Rozloučení s maminkou</title>
     <style>
-        body {
-            background-color: #000;
-            padding: 0;
+        body, html {
+            min-height: 100dvh;
             margin: 0;
-            font-family: Candara, Arial, Helvetica;
-            font-size: 1.0em;
+            background-color: black;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Amiri", serif;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1.3;
+            font-size: 19.36px;
         }
 
-        #page {
-            max-width: 1680px;
-            min-height: 970px;
-            height: 1571px;
-            margin: 0 auto;
-            background: #000 url(/bg.jpg) no-repeat right top;
+        body {
+            padding: 1em;
         }
 
-        #contact {
-            background: url(/boxbg.png) repeat left top;
-            margin: 60px 0px 60px 120px;
-            width: 470px;
-            padding: 20px;
-            padding-bottom: 1px;
-            color: white;
-            border-radius: 15px;
-            -webkit-border-radius: 15px;
-            -moz-border-radius: 15px;
+        #paper {
+            background-color: white;
+            width: 41em;
+            aspect-ratio: 1/1.414;
+            padding: 1em;
+        }
+
+        #border {
+            border: 0.2em black solid;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 3.5em;
+        }
+
+        #namebox, #crossbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3.5em;
+        }
+
+        #crossbox .motto {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 1.3em;
+            font-style: italic;
+        }
+
+        #crossbox .motto span {
+            display: block;
+            position: relative;
+        }
+
+        #crossbox .motto span:nth-child(1) {
+            left: -2em;
+        }
+
+        #crossbox .motto span:nth-child(3) {
+            left: 1.7em;
+        }
+
+
+        #crossbox img {
+            width: 7em;
+            margin: 0 4em;
+        }
+
+        #img-box {
+            border: 2px black solid;
+            padding: 2px;
+            line-height: 0;
+        }
+
+        #namebox img {
+            width: 10.33em;
+            aspect-ratio: 1/1;
+        }
+
+        #namebox div:nth-child(2) {
+            margin-left: 1em;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #death-date {
+            display: block;
+            position: relative;
+            left: 3px;
         }
 
         h1 {
-            font-size: 3em;
-            letter-spacing: 0.05em;
-            margin: 0 0 1em;
-            font-weight: normal;
+            font-size: 2.2em;
+            margin: 0 0 0.2em;
         }
 
-        p {
-            margin-right: 1em;
+        #message {
+            margin-top: 6em;
+            /*margin-bottom: -1em;*/
+            text-align: center;
         }
 
-        p.sup {
-            font-size: 1.2em;
+        #message p {
+            margin-bottom: 3em;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        #linkpanel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         a {
-            color: #95CB21;
-            text-decoration: none;
+            display: inline-block;
+            border: 3px black solid;
+            color: black;
+            padding: 1em;
+            padding-left: 3em;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.2em;
+            background-image: url("/img/listky.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 0.7em bottom;
+            box-sizing: content-box;
+            margin: 0 1em;
         }
 
-        a:hover {
-            text-decoration: underline;
+        a:hover, a:focus {
+            background-color: white;
+            border-color: transparent;
+            filter: invert();
         }
 
-        small {
-            font-style: italic;
-            color: #ccc;
-            font-size: 0.8em;
+        @media screen and (min-width: 600px) and (max-width: 890px) {
+            html, body {
+                --viewport: 100vw;
+                --viewportDiff: calc(var(--viewport) - 600px);
+                --fontSizeCoefc: calc(var(--viewportDiff) * 0.022);
+                font-size: calc(12.98px + var(--fontSizeCoefc));
+            }
         }
+
+        @media screen and (max-width: 599px) {
+            html, body {
+                font-size: 14px;
+            }
+
+            body {
+                padding: 0.5em;
+            }
+
+            #paper {
+                width: auto;
+                aspect-ratio: auto;
+            }
+
+            #border {
+                padding: 2em;
+            }
+
+            #namebox, #crossbox {
+                margin-bottom: 2em;
+            }
+
+            #message {
+                margin-top: auto;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            #crossbox .motto span {
+                display: initial;
+                position: initial;
+            }
+
+            #crossbox img {
+                margin: 0 1em;
+            }
+
+            #namebox img {
+                width: 8em;
+            }
+
+            #linkpanel {
+                margin-top: -1em;
+                flex-direction: column;
+            }
+
+            #linkpanel a {
+                margin: 0.5em 0;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            #namebox {
+                flex-direction: column;
+            }
+
+            #namebox #img-box {
+                margin-bottom: 1em;
+            }
+        }
+
+        /**
+            ANIMATIONS
+         */
+        @keyframes dimBg {
+            from {
+                background-color: #fff;
+            }
+            to {
+                background-color: #000;
+            }
+        }
+
+        @keyframes showBorder {
+            from {
+                border-color: transparent;
+            }
+            to {
+                border-color: #000;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeUnzoom {
+            from {
+                opacity: 0;
+                transform: scale(2.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+
+        html, body {
+            background-color: #fff;
+            animation: dimBg 10s ease 15s forwards;
+        }
+
+        #border {
+            border-color: transparent;
+            animation: showBorder 4s ease 12s forwards;
+        }
+
+        #crossbox {
+            opacity: 0;
+            animation: fadein 5s ease 8s forwards;
+        }
+
+        #death-date {
+            opacity: 0;
+            animation: fadeUnzoom 3.5s ease 2s forwards;
+            animation-timing-function: ease-in;
+        }
+
+        #message, #linkpanel {
+            opacity: 0;
+            animation: fadein 5s ease 9s forwards;
+        }
+
     </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22545774-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-22545774-1');
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPY9J5C974"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-LPY9J5C974');
-    </script>
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
 </head>
 
 <body>
-<div id="page">
-    &nbsp;
-    <div id="contact">
-        <h1>MVDr. Iva Boučková</h1>
-        <p class="sup"><strong>Veterinární lékařka</strong>, <br>
-            do roku 2013 inspektorka
-            v&nbsp;<a href="https://www.svscr.cz/statni-veterinarni-sprava/organizacni-utvary-statni-veterinarni-spravy/mevs-svs-praha/">Městské veterinární správě v&nbsp;Praze</a>
-            a vášnivá chovatelka zvěře různorodého původu</p>
-        <p>E-mail: <a href="mailto:iva&#64;bouckova.cz">iva&#64;bouckova.cz</a></p>
+<div id="paper">
+    <div id="border">
+        <div id="crossbox">
+            <p class="motto">
+                <span>Lidé neumírají,</span>
+                <span>dokud žijí v srdcích těch,</span>
+                <span>kteří je milují.</span>
+            </p>
+            <img src="/img/kriz.png" alt="Křížek">
+        </div>
+        <div id="namebox">
+            <div id="img-box">
+                <img src="/img/mamka-preview.jpg" alt="Maminka">
+            </div>
+            <div>
+
+                <h1>MVDr. Iva Boučková</h1>
+                <p>
+                    ﹡ 15. 3. 1943
+                    <span id="death-date">✝  29. 3. 2024</span>
+                </p>
+            </div>
+        </div>
+        <div id="message">
+            <p>
+                S bolestí na srdci musím oznámit všem přátelům a známým, že nás po dlouhé nemoci náhle
+                a v tichosti opustila na velký pátek 29. 3. 2024 ve věku 81 let milovaná
+                maminka.
+            </p>
+            <p>
+                S maminkou se rozloučíme v úzkém kruhu rodinném.<br>
+                Prosím, zapalte si doma svíčku a zavzpomínejte na maminku v dobrém.
+            </p>
+
+            <p><strong>Syn Jakub</strong></p>
+        </div>
+        <div id="linkpanel">
+            <a href="https://photos.app.goo.gl/We87kAMyLrhV9x4V7" target="_blank">Vzpomínky</a>
+            <a href="mailto:pan%2Bkondolence@jakubboucek.cz?subject=Kondolence%20-%20Iva%20Bou%C4%8Dkov%C3%A1"
+               target="_blank">Kondolence</a>
+        </div>
     </div>
 </div>
 </body>

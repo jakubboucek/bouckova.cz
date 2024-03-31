@@ -5,6 +5,11 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "redirects": [ {
+      "source": "/favicon.ico",
+      "destination": "/favicon.png",
+      "type": 301
+    } ]
   }
 }
