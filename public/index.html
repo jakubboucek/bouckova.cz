@@ -149,11 +149,21 @@
             justify-content: center;
             align-items: center;
         }
+        #print {
+            font-size: 0.8em;
+            flex-grow: 1;
+            vertical-align: bottom;
+            text-align: center;
+            margin: 6em 0 -2em;
+        }
 
         @media screen {
-
             #linkpanel {
                 display: flex;
+            }
+
+            #print {
+                display: none;
             }
         }
 
@@ -376,12 +386,15 @@
             <a href="mailto:pan%2Bkondolence@jakubboucek.cz?subject=Kondolence%20-%20Iva%20Bou%C4%8Dkov%C3%A1"
                target="_blank">Kondolence</a>
         </div>
+        <div id="print">
+            www.bouckova.cz
+        </div>
     </div>
 </div>
 </body>
 <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+    import {getAnalytics} from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
 
     const firebaseConfig = {
         apiKey: "AIzaSyA7VsMZedO5mL79Q51rrkc61kuBxrx1B5E",
