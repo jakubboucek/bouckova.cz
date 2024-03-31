@@ -302,8 +302,18 @@
             opacity: 0;
             animation: fadein 5s ease 9s forwards;
         }
-
     </style>
+    <script>
+        window.requestAnimationFrame(() => {
+            try {
+                const url = new URL(location);
+                url.searchParams.delete('fbclid');
+                history.replaceState(null, '', url.href);
+            } catch (ex) {
+                // do nothing - not important code
+            }
+        });
+    </script>
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
 </head>
 
